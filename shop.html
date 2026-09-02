@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Cửa hàng | Di Sản Việt</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+
+</head>
+<body data-page="shop">
+
+  <div class="announcement">Miễn phí vận chuyển cho đơn từ 500.000đ • Website demo giao diện</div>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">DS</span>
+        <span class="brand-text"><strong>DI SẢN VIỆT</strong><small>HERITAGE SHOP</small></span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a data-nav="home" href="index.html">Trang chủ</a>
+        <a data-nav="shop" href="shop.html">Cửa hàng</a>
+        <a data-nav="collections" href="collections.html">Bộ sưu tập</a>
+        <a data-nav="story" href="story.html">Câu chuyện di sản</a>
+        <a data-nav="contact" href="contact.html">Liên hệ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="small-link demo-link" href="account.html">Người mua</a>
+        <a class="small-link demo-link" href="seller.html">Người bán</a>
+        <button class="cart-button" id="openCart"><span>Giỏ hàng</span><b id="cartCount">0</b></button>
+        <button class="mobile-menu-button" id="menuButton">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Trang chủ</a>
+      <a href="shop.html">Cửa hàng</a>
+      <a href="collections.html">Bộ sưu tập</a>
+      <a href="story.html">Câu chuyện di sản</a>
+      <a href="contact.html">Liên hệ</a>
+      <a href="account.html">Tài khoản người mua</a>
+      <a href="seller.html">Kênh người bán</a>
+    </div>
+  </header>
+
+<main>
+<section class="page-hero compact">
+  <div class="container">
+    <span class="eyebrow">CỬA HÀNG</span>
+    <h1>Mua sắm sản phẩm di sản</h1>
+    <p>Danh mục sản phẩm demo với chức năng tìm kiếm, lọc và giỏ hàng.</p>
+  </div>
+</section>
+<section class="section products-section">
+  <div class="container">
+    <div class="shop-toolbar">
+      <div class="filter-row" id="filterRow">
+        <button class="filter active" data-filter="all">Tất cả</button>
+        <button class="filter" data-filter="fashion">Thời trang</button>
+        <button class="filter" data-filter="accessory">Phụ kiện</button>
+        <button class="filter" data-filter="home">Đồ dùng</button>
+        <button class="filter" data-filter="gift">Quà tặng</button>
+      </div>
+      <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Tìm sản phẩm..." /></div>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+    <div class="empty-state" id="emptyState">Không tìm thấy sản phẩm phù hợp.</div>
+  </div>
+</section>
+</main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-mark">DS</span>
+          <span class="brand-text"><strong>DI SẢN VIỆT</strong><small>HERITAGE SHOP</small></span>
+        </a>
+        <p>Sản phẩm ứng dụng họa tiết di sản Việt trong đời sống đương đại.</p>
+      </div>
+      <div><h4>Mua sắm</h4><a href="shop.html">Cửa hàng</a><a href="collections.html">Bộ sưu tập</a></div>
+      <div><h4>Thông tin</h4><a href="story.html">Câu chuyện di sản</a><a href="contact.html">Liên hệ</a></div>
+      <div><h4>Hệ thống demo</h4><a href="account.html">Người mua</a><a href="seller.html">Người bán</a><span>Quản trị — chưa triển khai</span></div>
+    </div>
+    <div class="container copyright">© 2026 Di Sản Việt — Website demo.</div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div><span class="eyebrow">GIỎ HÀNG DEMO</span><h3>Sản phẩm đã chọn</h3></div>
+      <button id="closeCart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Tạm tính</span><strong id="cartTotal">0đ</strong></div>
+      <button class="button primary full" id="checkoutBtn">Thanh toán demo</button>
+      <small>Chưa tích hợp thanh toán, tài khoản hay hệ thống quản trị.</small>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast"></div>
+  <script src="assets/script.js"></script>
+
+</body>
+</html>
